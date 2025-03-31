@@ -1,0 +1,31 @@
+/* Устанавливаем высоту всей страницы */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контейнер должен занимать всю высоту экрана */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Контентная часть страницы */
+.container {
+    flex: 1;
+}
+
+/* Фиксируем подвал внизу */
+footer {
+    background: #222; /* Цвет фона подвала */
+    color: white; /* Цвет текста */
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Подталкивает подвал вниз */
+}
